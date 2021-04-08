@@ -5,3 +5,10 @@ Este es mi *proyecto* de **Periodismo de Datos II**.
 * Un elemento del listado
 * Otro elemento
 * [Enlace](https://infotics.es)
+
+# APT-CYG
+
+`apt-cyg install git`
+
+# API BASH
+
