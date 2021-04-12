@@ -1,209 +1,126 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Prologue by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Original de Mark Otto, Jacob Thornton, and Bootstrap contributors, modificaciones de Adolfo Antón Bravo">
+    <meta name="generator" content="nano">
+    <title>Mi proyecto de periodismo y visualización de datos</title>
 
-		<!-- Header -->
-			<div id="header">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
 
-				<div class="top">
+    
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
-						</div>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-				</div>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-				<div class="bottom">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mi proyecto con datos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="prologue/index.html">Prologue</a></li>
+          <li class="nav-item"><a class="nav-link" href="#insertamos-una-imagen">imagen</a></li>
+<li class="nav-item"><a class="nav-link" href="#insertamos-un-iframe">iframe</a></li>
+          
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link disabled" href="#imagen" tabindex="-1" aria-disabled="true">Disabled</a>-->
+<!--          </li>-->
+        </ul>
+<!--        <form class="d-flex">-->
+<!--          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--          <button class="btn btn-outline-success" type="submit">Buscar</button>-->
+<!--        </form>-->
+      </div>
+    </div>
+  </nav>
+</header>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+  <!-- begin markdown content -->
 
-				</div>
+<h1 class="mt-5">
+Plantilla Bootstrap &quot;Sticky footer&quot;
+</h1>
+<p class="lead">
+Escribe el texto que tengas por aquí.
+</p>
+<p>Recuerda que he propuesto este recorrido:</p>
+<ul>
+<li>Escribe el texto en <code>nano</code>.</li>
+<li>Utiliza sintaxis <em>Markdown</em>.</li>
+<li>Una vez que tengas el texto, transfórmalo en <abbr title="Hypertext Markup Language">HTML</abbr>:
+<ul>
+<li>De forma manual.</li>
+<li>Copia el <em>Markdown</em> en la página de prueba de <a href="https://pandoc.org/try/">Pandoc</a> y conviértelo desde ese menú (<em>parse</em>).</li>
+<li>Descarga de <a href="https://pandoc.org/installing.html">Pandoc.org</a>.</li>
+<li>Instala con <a href="https://chocolatey.org">chocolatey</a>.</li>
+</ul>
+</li>
+<li>Copia ese <em>HTML</em> y pégalo en el código de esta parte del contenido.</li>
+</ul>
+<p>Y eso no es todo, tenemos que verlo ofrecido por un servidor web:</p>
+<ul>
+<li>En nuestro ordenador o <em>localhost</em> con python, <code>python3 -m http.server --bind 127.0.0.1 1312</code>.</li>
+<li>En la Web con <a href="https://github.com/">Github</a>.</li>
+</ul>
+<hr />
+<h2 id="insertamos-un-iframe">Insertamos un iframe</h2>
+<iframe title="Número total de parados en España por mes" aria-label="Interactive line chart" id="datawrapper-chart-kgtYh" src="https://datawrapper.dwcdn.net/kgtYh/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="720">
+</iframe>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur, nisi quod turpis oratio est? Cur, nisi quod turpis oratio est? Eaedem enim utilitates poterunt eas labefactare atque pervertere. Addo etiam illud, multa iam mihi dare signa puerum et pudoris et ingenii, sed aetatem vides. Duo Reges: constructio interrete. Quae cum ita sint, effectum est nihil esse malum, quod turpe non sit. </p>
+<p>Contineo me ab exemplis. Scaevola tribunus plebis ferret ad plebem vellentne de ea re quaeri. Hoc non est positum in nostra actione. Illa sunt similia: hebes acies est cuipiam oculorum, corpore alius senescit; An potest cupiditas finiri? Ad quorum et cognitionem et usum iam corroborati natura ipsa praeeunte deducimur. Quis animo aequo videt eum, quem inpure ac flagitiose putet vivere? Res enim fortasse verae, certe graves, non ita tractantur, ut debent, sed aliquanto minutius. </p>
+<hr />
+<h2 id="insertamos-una-imagen">Insertamos una imagen</h2>
+<img src="img/graph1.png" width="100%">
+<p>Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Sed in rebus apertissimis nimium longi sumus. Terram, mihi crede, ea lanx et maria deprimet. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Videmus igitur ut conquiescere ne infantes quidem possint. </p>
+<p>Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Sic enim censent, oportunitatis esse beate vivere. Sed quae tandem ista ratio est? Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Neque enim disputari sine reprehensione nec cum iracundia aut pertinacia recte disputari potest. </p>
+  <!-- end markdown content -->
+  </div>
+</main>
+  <!-- footer content -->
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Aquí puedes disponer un contenido al pie de la página.</span>
+  </div>
+</footer>
 
-			</div>
 
-		<!-- Main -->
-			<div id="main">
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">¡Hola, Mundo!</h2>
-								<p>Empezando</p>
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-							</footer>
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Julián</h2>
-							</header>
-
-							<p>ElMundo presenta una noticia sobre el covid-19 que se va actualizando periódicamente: https://www.elmundo.es/ciencia-y-salud/salud/2020/03/02/5e5cd4ebfc6c83632e8b4644.html.</p>
-<p>El primer gráfico se trata de la evolución diaria del número de casos en todos los países del mundo, con la excepción de China, desde que arrancó la pandemia. Se trata de un gráfico en barras horizontales que se ejecuta directamente como video y te muestra esa evolución. Te diferencia los países por continentes usando diferentes colores, se especifica qué país es a la derecha, mientras que a la izquierda está el dato numérico que no para de crecer.</p>
-<p>Este gráfico me parece bastante bueno porque se presenta la información de una manera más rápida y directa. El único pero que le pondría es que está en bucle: una vez llega hasta el último día se reinicia y empieza de nuevo desde enero de 2020, por lo que yo le quitaría ese bucle para que pare hasta el último dato, el más actualizado.</p>
-<p>El siguiente gráfico que presentan en esta noticia representa los diez países con más afectados. Este gráfico, con todos los respetos, es un poco espantoso. Aplica una selección de colores a los números en dos columnas diferentes: una para los afectados y otra para los fallecidos, eligiendo el azul y el negro respectivamente. Esto a simple vista no se logra entender, hay que detenerse y mirar bien para captar la idea. Además, la última columna presenta el porcentaje de población afectada y también usa una gama de colores centrada en el azul, por lo que la información no es del todo clara. Tiene pinta que eligieron el patrón de colores por la identidad del medio, pero para este tipo de información no sería del todo correcta.</p>
-<p>Por último, este gráfico representa los diez países con más muertos por covid-19. Utiliza el mismo patrón de colores que el anterior, pero este usa el azul en un gráfico en barras horizontales para mostrar el número de afectados en cada país, mientras que pintan una casilla en negro con el número de muertos por cada 100.000 habitantes.</p>
-<p>De esta manera sí que se presenta la información de una manera más clara, pero el parámetro para aplicar el negro a la última columna es confuso, pues a India no le aplican ese color ya que tiene 11,9 muertos por cada 100.000 habitantes, pero aparece en la gráfica al ser el cuarto país con mayor número de afectados en el mundo. Se puede suponer que aquellos países que superen el umbral de 100 muertos por cada 100.000 habitantes tendrán su casilla en negro, pero hay países como Rusia y Francia que presentan números más bajos y aun así tienen la casilla coloreada, por lo que ese parámetro es algo confuso.</p>
-
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+      
+  </body>
 </html>
